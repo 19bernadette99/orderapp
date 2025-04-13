@@ -1,235 +1,445 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="icon" href="./images/Favicon/FAVICON.png">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./styles/basket.css">
-    <link rel="stylesheet" href="./styles/fonts.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon" href="./images/Favicon/FAVICON.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/basket.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <script src="./template.js"></script>
-    <title>Burgerlicious </title>
-</head>
-<body>
+    <title>Burgerlicious</title>
+  </head>
+  <body>
     <header>
+      <div class="limitation-header">
+        <img class="logo" src="./images/Logo/logo.png" alt="Logo" />
+        <h1>Burgerlicious</h1>
+      </div>
 
-        
-        <div class="limitation-header">
-            <img class="logo" src="./images/Logo/logo.png" alt="Logo">
-            <h1>Burgerlicious </h1>
-           
-        </div>
+      <div class="theme-toggle-wrapper">
+        <button id="theme-toggle" class="theme-toggle">
+          <span class="sun">☀️</span>
+          <span class="moon">🌚</span>
+        </button>
+      </div>
 
-        <div class="button-container">
-            <button href=#cart id="cart-button" class="cart-button">
-                <i class="fas fa-shopping-cart"></i>
-            </button>
+      <div class="button-container">
+        <button href="#cart" id="cart-button" class="cart-button">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </div>
+
+      <div class="selection-div">
+        <div class="nav-item">
+          <a href="#burgers">
+            <img
+              class="selection1"
+              src="./images/Header/burger1.png"
+              alt="Burger"
+            />
+            Burger</a
+          >
         </div>
-     
-        <div class="selection-div">
-            <div class="nav-item">         
-                <a href="#burgers">
-                    <img class="selection1" src="./images/Header/burger1.png" alt="Burger">
-                    Burger</a>
-            </div>
-            <div class="nav-item">           
-                <a href="#sides">
-                    <img class="selection2" src="./images/Header/pommes.png" alt="Sides">
-                    Beilagen</a>
-            </div>
-            <div class="nav-item">       
-                <a href="#dips">
-                    <img class="selection4" src="./images/Header/dips1.png" alt="Dips & Sauces">
-                    Dips</a>
-            </div>
-            <div class="nav-item">   
-                <a href="#drinks">
-                    <img class="selection3" src="./images/Header/drink.png" alt="Drinks">
-                    Getränke</a>
-            </div>
+        <div class="nav-item">
+          <a href="#sides">
+            <img
+              class="selection2"
+              src="./images/Header/pommes.png"
+              alt="Sides"
+            />
+            Beilagen</a
+          >
         </div>
-        <div class="rating">
-            <span class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </span>
-            <span class="rating-text">(4.5 von 5)</span>
+        <div class="nav-item">
+          <a href="#dips">
+            <img
+              class="selection4"
+              src="./images/Header/dips1.png"
+              alt="Dips & Sauces"
+            />
+            Dips</a
+          >
         </div>
+        <div class="nav-item">
+          <a href="#drinks">
+            <img
+              class="selection3"
+              src="./images/Header/drink.png"
+              alt="Drinks"
+            />
+            Getränke</a
+          >
+        </div>
+      </div>
+      <div class="rating">
+        <span class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </span>
+        <span class="rating-text">(4.5 von 5)</span>
+      </div>
     </header>
-    
 
     <div class="content-wrapper">
-        <main class="limitation-menu">
-            <section id="burgers">
-                <h2>Burger</h2>
-                <div class="menu-item">
-                    <h3>Classic Burger</h3>
-                    <p>Unser Classic Burger besteht aus einem weichen Brioche-Brötchen, einem Bio-Rindfleisch-Patty, frischem Eisbergsalat, schmelzendem Cheddar-Käse, fruchtigen Tomaten und unserer hausgemachten Burger-Sauce – ein klassisches Geschmackserlebnis!</p>
-                    <p>Preis: 12.99 €</p>
-                    <button class="add-to-cart" data-name="Classic Burger" data-price="12.99" data-description="Unser Classic Burger...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Hamburger</h3>
-                    <p>Unser Hamburger wird mit einem Sesam-Brötchen, Rindfleisch-Patty, Gurken, Zwiebeln, Tomaten, Eisbergsalat, cremigen Cheddar-Käse und einer herzhaften BBQ-Sauce serviert.</p>
-                    <p>Preis: 11.99 €</p>
-                    <button class="add-to-cart" data-name="Hamburger" data-price="11.99" data-description="Unser Hamburger...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Cheeseburger</h3>
-                    <p>Unser Cheeseburger kommt mit einem Brioche-Brötchen, Bio-Rindfleisch, geschmolzenem Cheddar-Käse, Eisbergsalat, frischen Tomaten und einer würzigen hausgemachten Käsesauce.</p>
-                    <p>Preis: 11.99 €</p>
-                    <button class="add-to-cart" data-name="Cheeseburger" data-price="11.99" data-description="Unser Cheeseburger...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Veggie Burger</h3>
-                    <p>Unser Veggie Burger wird serviert auf einem knusprigen Vollkornbrötchen, gefüllt mit einem herzhaften pflanzlichen Patty, Eisbergsalat, Tomaten und einer würzigen veganen Mayo.</p>
-                    <p>Preis: 10.99 €</p>
-                    <button class="add-to-cart" data-name="Veggie Burger" data-price="10.99" data-description="Unser Veggie Burger...">Hinzufügen</button>
-                </div>
-            </section>
+      <main class="limitation-menu">
+        <section id="burgers">
+          <h2>Burger</h2>
+          <div class="menu-item">
+            <h3>Classic Burger</h3>
+            <p>
+              Unser Classic Burger besteht aus einem weichen Brioche-Brötchen,
+              einem Bio-Rindfleisch-Patty, frischem Eisbergsalat, schmelzendem
+              Cheddar-Käse, fruchtigen Tomaten und unserer hausgemachten
+              Burger-Sauce – ein klassisches Geschmackserlebnis!
+            </p>
+            <p>Preis: 12.99 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Classic Burger"
+              data-price="12.99"
+              data-description="Unser Classic Burger..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Hamburger</h3>
+            <p>
+              Unser Hamburger wird mit einem Sesam-Brötchen, Rindfleisch-Patty,
+              Gurken, Zwiebeln, Tomaten, Eisbergsalat, cremigen Cheddar-Käse und
+              einer herzhaften BBQ-Sauce serviert.
+            </p>
+            <p>Preis: 11.99 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Hamburger"
+              data-price="11.99"
+              data-description="Unser Hamburger..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Cheeseburger</h3>
+            <p>
+              Unser Cheeseburger kommt mit einem Brioche-Brötchen,
+              Bio-Rindfleisch, geschmolzenem Cheddar-Käse, Eisbergsalat,
+              frischen Tomaten und einer würzigen hausgemachten Käsesauce.
+            </p>
+            <p>Preis: 11.99 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Cheeseburger"
+              data-price="11.99"
+              data-description="Unser Cheeseburger..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Veggie Burger</h3>
+            <p>
+              Unser Veggie Burger wird serviert auf einem knusprigen
+              Vollkornbrötchen, gefüllt mit einem herzhaften pflanzlichen Patty,
+              Eisbergsalat, Tomaten und einer würzigen veganen Mayo.
+            </p>
+            <p>Preis: 10.99 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Veggie Burger"
+              data-price="10.99"
+              data-description="Unser Veggie Burger..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+        </section>
 
-            <section id="sides">
-                <h2>Beilagen</h2>
-                <div class="menu-item">
-                    <h3>Klassische Pommes</h3>
-                    <p>Goldgelb frittiert, außen knusprig und innen weich. Der perfekte Begleiter zu jedem Burger.</p>
-                    <p>Preis: 4.99 €</p>
-                    <button class="add-to-cart" data-name="Klassische Pommes" data-price="4.99" data-description="Goldgelb frittiert...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Süßkartoffelpommes</h3>
-                    <p>Knusprige Süßkartoffelstreifen, leicht süßlich im Geschmack, ideal für eine gesunde Alternative.</p>
-                    <p>Preis: 6.99 €</p>
-                    <button class="add-to-cart" data-name="Süßkartoffelpommes" data-price="6.99" data-description="Knusprige Süßkartoffelstreifen...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Curly Fries</h3>
-                    <p>Spiral-Pommes mit würziger Note, außen knusprig, innen weich.</p>
-                    <p>Preis: 5.99 €</p>
-                    <button class="add-to-cart" data-name="Curly Fries" data-price="5.99" data-description="Spiral-Pommes mit würziger Note...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Chili Cheese Fries</h3>
-                    <p>Pommes übergossen mit würzigem Käse und herzhaftem Chili, perfekt für den extra Genuss.</p>
-                    <p>Preis: 5.99 €</p>
-                    <button class="add-to-cart" data-name="Chili Cheese Fries" data-price="5.99" data-description="Pommes übergossen mit würzigem Käse...">Hinzufügen</button>
-                </div>
-            </section>
+        <section id="sides">
+          <h2>Beilagen</h2>
+          <div class="menu-item">
+            <h3>Klassische Pommes</h3>
+            <p>
+              Goldgelb frittiert, außen knusprig und innen weich. Der perfekte
+              Begleiter zu jedem Burger.
+            </p>
+            <p>Preis: 4.99 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Klassische Pommes"
+              data-price="4.99"
+              data-description="Goldgelb frittiert..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Süßkartoffelpommes</h3>
+            <p>
+              Knusprige Süßkartoffelstreifen, leicht süßlich im Geschmack, ideal
+              für eine gesunde Alternative.
+            </p>
+            <p>Preis: 6.99 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Süßkartoffelpommes"
+              data-price="6.99"
+              data-description="Knusprige Süßkartoffelstreifen..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Curly Fries</h3>
+            <p>Spiral-Pommes mit würziger Note, außen knusprig, innen weich.</p>
+            <p>Preis: 5.99 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Curly Fries"
+              data-price="5.99"
+              data-description="Spiral-Pommes mit würziger Note..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Chili Cheese Fries</h3>
+            <p>
+              Pommes übergossen mit würzigem Käse und herzhaftem Chili, perfekt
+              für den extra Genuss.
+            </p>
+            <p>Preis: 5.99 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Chili Cheese Fries"
+              data-price="5.99"
+              data-description="Pommes übergossen mit würzigem Käse..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+        </section>
 
-            <section id="dips">
-                <h2>Dips & Saucen</h2>
-                <div class="menu-item">
-                    <h3>Hausgemachte BBQ-Sauce</h3>
-                    <p>Rauchig und süß, ideal für ein würziges Extra zum Burger.</p>
-                    <p>Preis: 1.99 €</p>
-                    <button class="add-to-cart" data-name="Hausgemachte BBQ-Sauce" data-price="1.99" data-description="Rauchig und süß...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Käse-Dip</h3>
-                    <p>Cremiger, geschmolzener Käse, perfekt für Käseliebhaber.</p>
-                    <p>Preis: 2.49 €</p>
-                    <button class="add-to-cart" data-name="Käse-Dip" data-price="2.49" data-description="Cremiger, geschmolzener Käse...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Aioli</h3>
-                    <p>Knoblauchmayonnaise für einen intensiven, mediterranen Geschmack.</p>
-                    <p>Preis: 1.79 €</p>
-                    <button class="add-to-cart" data-name="Aioli" data-price="1.79" data-description="Knoblauchmayonnaise für einen intensiven...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Sriracha Mayo</h3>
-                    <p>Eine Mischung aus scharfer Sriracha-Sauce und cremiger Mayonnaise für eine würzige Schärfe.</p>
-                    <p>Preis: 1.89 €</p>
-                    <button class="add-to-cart" data-name="Sriracha Mayo" data-price="1.89" data-description="Eine Mischung aus scharfer Sriracha-Sauce...">Hinzufügen</button>
-                </div>
-            </section>
+        <section id="dips">
+          <h2>Dips & Saucen</h2>
+          <div class="menu-item">
+            <h3>Hausgemachte BBQ-Sauce</h3>
+            <p>Rauchig und süß, ideal für ein würziges Extra zum Burger.</p>
+            <p>Preis: 1.99 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Hausgemachte BBQ-Sauce"
+              data-price="1.99"
+              data-description="Rauchig und süß..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Käse-Dip</h3>
+            <p>Cremiger, geschmolzener Käse, perfekt für Käseliebhaber.</p>
+            <p>Preis: 2.49 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Käse-Dip"
+              data-price="2.49"
+              data-description="Cremiger, geschmolzener Käse..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Aioli</h3>
+            <p>
+              Knoblauchmayonnaise für einen intensiven, mediterranen Geschmack.
+            </p>
+            <p>Preis: 1.79 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Aioli"
+              data-price="1.79"
+              data-description="Knoblauchmayonnaise für einen intensiven..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Sriracha Mayo</h3>
+            <p>
+              Eine Mischung aus scharfer Sriracha-Sauce und cremiger Mayonnaise
+              für eine würzige Schärfe.
+            </p>
+            <p>Preis: 1.89 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Sriracha Mayo"
+              data-price="1.89"
+              data-description="Eine Mischung aus scharfer Sriracha-Sauce..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+        </section>
 
-            <section id="drinks">
-                <h2>Getränke</h2>
-                <div class="menu-item">
-                    <h3>Hausgemachte Limonade</h3>
-                    <p>Spritzige Limonade mit einem Hauch von Zitrone und Limette für den perfekten Durstlöscher.</p>
-                    <p>Preis: 2.99 €</p>
-                    <button class="add-to-cart" data-name="Hausgemachte Limonade" data-price="2.99" data-description="Spritzige Limonade...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Cola</h3>
-                    <p>Erfrischende Cola mit dem klassischen Geschmack, perfekt für jeden Anlass.</p>
-                    <p>Preis: 2.49 €</p>
-                    <button class="add-to-cart" data-name="Cola" data-price="2.49" data-description="Erfrischende Cola...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Eistee</h3>
-                    <p>Erfrischender Eistee, ungesüßt und mit einem natürlichen Fruchtgeschmack.</p>
-                    <p>Preis: 2.79 €</p>
-                    <button class="add-to-cart" data-name="Eistee" data-price="2.79" data-description="Erfrischender Eistee...">Hinzufügen</button>
-                </div>
-                <div class="menu-item">
-                    <h3>Bier</h3>
-                    <p>Ein klassisches Lagerbier, perfekt für alle Bierliebhaber.</p>
-                    <p>Preis: 3.99 €</p>
-                    <button class="add-to-cart" data-name="Bier" data-price="3.99" data-description="Ein klassisches Lagerbier...">Hinzufügen</button>
-                </div>
-            </section>
-        </main>
-        <aside class="basket-wrapper" id="basket">
-            <div class="basket">
-                <div id="cart">
-                    <h2>Warenkorb</h2>
-                    <ul id="cart-items"></ul>
-                    
-                    <div id="cart-message" style="display: none; text-align: center; margin-top: 12px; color: yellow; font-weight: bold;"></div>
-                   
-                    <div class="delivery-options">
-                        <h3>Lieferoptionen</h3>
-                        <label>
-                            <input type="radio" name="delivery-option" value="pickup" checked onclick="updateDeliveryOption()"> Selbstabholung
-                        </label>
-                        <br>
-                        <label>
-                            <input type="radio" name="delivery-option" value="delivery" onclick="updateDeliveryOption()"> Lieferung (+5.00 €)
-                        </label>
-                    </div>
+        <section id="drinks">
+          <h2>Getränke</h2>
+          <div class="menu-item">
+            <h3>Hausgemachte Limonade</h3>
+            <p>
+              Spritzige Limonade mit einem Hauch von Zitrone und Limette für den
+              perfekten Durstlöscher.
+            </p>
+            <p>Preis: 2.99 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Hausgemachte Limonade"
+              data-price="2.99"
+              data-description="Spritzige Limonade..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Cola</h3>
+            <p>
+              Erfrischende Cola mit dem klassischen Geschmack, perfekt für jeden
+              Anlass.
+            </p>
+            <p>Preis: 2.49 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Cola"
+              data-price="2.49"
+              data-description="Erfrischende Cola..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Eistee</h3>
+            <p>
+              Erfrischender Eistee, ungesüßt und mit einem natürlichen
+              Fruchtgeschmack.
+            </p>
+            <p>Preis: 2.79 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Eistee"
+              data-price="2.79"
+              data-description="Erfrischender Eistee..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+          <div class="menu-item">
+            <h3>Bier</h3>
+            <p>Ein klassisches Lagerbier, perfekt für alle Bierliebhaber.</p>
+            <p>Preis: 3.99 €</p>
+            <button
+              class="add-to-cart"
+              data-name="Bier"
+              data-price="3.99"
+              data-description="Ein klassisches Lagerbier..."
+            >
+              Hinzufügen
+            </button>
+          </div>
+        </section>
+      </main>
+      <aside class="basket-wrapper" id="basket">
+        <div class="basket">
+          <div id="cart">
+            <h2>Warenkorb</h2>
+            <ul id="cart-items"></ul>
 
-                    <div id="delivery-fields" style="display: none;">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" required>
-                        
-                        <label for="street">Straße:</label>
-                        <input type="text" id="street" required>
-                        
-                        <label for="postal-code">PLZ:</label>
-                        <input type="text" id="postal-code" required pattern="\d{5}" title="Bitte geben Sie eine gültige PLZ ein.">
-                    
-                        <label for="city">Ort:</label>
-                        <input type="text" id="city" required>
-                    </div>
-                            
-                    <p id="total-price">
-                        <span class="price-label">Gesamtpreis:</span>
-                        <span class="price-amount">0.00 €</span>
-                    </p>
-                    
-                    <button id="checkout" onclick="checkout()">Zur Kasse</button>
-                    
-                </div>
+            <div
+              id="cart-message"
+              style="
+                display: none;
+                text-align: center;
+                margin-top: 12px;
+                color: yellow;
+                font-weight: bold;
+              "
+            ></div>
+
+            <div class="delivery-options">
+              <h3>Lieferoptionen</h3>
+              <label>
+                <input
+                  type="radio"
+                  name="delivery-option"
+                  value="pickup"
+                  checked
+                  onclick="updateDeliveryOption()"
+                />
+                Selbstabholung
+              </label>
+              <br />
+              <label>
+                <input
+                  type="radio"
+                  name="delivery-option"
+                  value="delivery"
+                  onclick="updateDeliveryOption()"
+                />
+                Lieferung (+5.00 €)
+              </label>
             </div>
-        </aside>
-               
-        <script src="./script.js"></script>
+
+            <div id="delivery-fields" style="display: none">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required />
+
+              <label for="street">Straße:</label>
+              <input type="text" id="street" required />
+
+              <label for="postal-code">PLZ:</label>
+              <input
+                type="text"
+                id="postal-code"
+                required
+                pattern="\d{5}"
+                title="Bitte geben Sie eine gültige PLZ ein."
+              />
+
+              <label for="city">Ort:</label>
+              <input type="text" id="city" required />
+            </div>
+
+            <p id="total-price">
+              <span class="price-label">Gesamtpreis:</span>
+              <span class="price-amount">0.00 €</span>
+            </p>
+
+            <button id="checkout" onclick="checkout()">Zur Kasse</button>
+          </div>
+        </div>
+      </aside>
+
+      <script src="./script.js"></script>
     </div>
 
     <footer>
-        <h3>&copy; 2024 Burgerlicious. Alle Rechte vorbehalten.</h3>
+      <h3>&copy; 2024 Burgerlicious. Alle Rechte vorbehalten.</h3>
     </footer>
-
-</body>
+  </body>
 </html>
