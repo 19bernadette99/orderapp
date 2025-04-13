@@ -225,6 +225,7 @@ footer.night-mode {
   display: flex;
   gap: 8px;
   align-items: center;
+  margin-right: 20px;
 }
 
 .theme-toggle .sun {
@@ -246,6 +247,10 @@ body.night-mode .theme-toggle .moon {
 @media (min-width: 1440px) {
   body {
     background-size: cover;
+  }
+
+  .theme-toggle {
+    margin-right: calc((100% - 1440px) / 2);
   }
 
   .limitation-header {
